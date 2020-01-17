@@ -1,0 +1,54 @@
+{
+  "name": "connections-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "async": "^2.6.1",
+    "atatus-js": "^3.1.1",
+    "atatus-node": "^0.1.6",
+    "axios": "^0.18.0",
+    "babel-plugin-styled-components": "^1.8.0",
+    "color": "^3.1.0",
+    "color-hash": "^1.0.3",
+    "express": "^4.16.4",
+    "gravatar": "^1.6.0",
+    "jsoneditor": "^5.24.7",
+    "keen-tracking": "^4.0.7",
+    "lodash": "^4.17.11",
+    "md5": "^2.2.1",
+    "moment": "^2.22.2",
+    "next": "^7.0.2",
+    "next-offline": "^3.0.3",
+    "next-routes": "^1.4.2",
+    "path-match": "^1.2.4",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-instantsearch-dom": "^5.3.1",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.1",
+    "resume-schema": "0.0.16",
+    "styled-components": "^4.0.0",
+    "svgo": "^1.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-postbuild": "next build",
+    "expo": "cd apps && expo start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomasdavis/connections-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thomasdavis/connections-app/issues"
+  },
+  "homepage": "https://github.com/thomasdavis/connections-app#readme"
+}

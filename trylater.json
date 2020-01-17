@@ -1,0 +1,406 @@
+{
+  "basics": {
+    "name": "Thomas  ✽ Davis",
+    "label": "Senior Javascript at Blockbid",
+    "picture": "",
+    "email": "",
+    "phone": "",
+    "website": "http://thomasdav.is",
+    "summary": "I’m a full stack web developer who loves working with open source technology. I work best at planning the architecture of web applications and their development life cycles. I also love to get the community involved and have had much experience with building and organizing large open source groups.  Specialties: React, Redux, Javascript - Full stack developer with lots of experience in lots of stuff",
+    "location": {
+      "address": "",
+      "postalCode": "3167",
+      "city": "",
+      "countryCode": "AU",
+      "region": ""
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "thomasdav_is",
+        "url": "https://twitter.com/thomasdav_is"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Blockbid",
+      "position": "Senior Javascript",
+      "website": "",
+      "startDate": "2018-03-01",
+      "summary": "",
+      "highlights": []
+    },
+    {
+      "company": "Independent Contractor",
+      "position": "Software Writer",
+      "website": "",
+      "startDate": "2018-01-01",
+      "summary": "Mostly building user interfaces for several companies in the following industries  - ML / Medical - Blockchain / Insurance - Government / Education",
+      "highlights": []
+    },
+    {
+      "company": "Listium",
+      "position": "Web Developer",
+      "website": "",
+      "startDate": "2016-01-01",
+      "summary": "Built a very large and complex React / Redux application. It works on all platforms and has IOS/Android builds due to it being a PWA. (wrapped it in React Native though only implementing a WebView) Worked with Postgres, Redis and Dynamodb for storage. Hosted on a mixture of Heroku Apps and EC2 servers. Caching by Fastly and Cloudflare",
+      "highlights": [],
+      "endDate": "2018-01-01"
+    },
+    {
+      "company": "FPVRACING.TV",
+      "position": "Co Founder",
+      "website": "",
+      "startDate": "2015-01-01",
+      "summary": "Built with Rails. Currently the largest FPV Racing league and social network.",
+      "highlights": [],
+      "endDate": "2017-01-01"
+    },
+    {
+      "company": "JSON Resume",
+      "position": "Founder",
+      "website": "",
+      "startDate": "2014-06-01",
+      "summary": "JSON Resume is a community driven open source initiative to create a JSON based standard for resumes. There is no reason why there can't be a common standard for writing a resume that can be extended with an ecosystem of open source tools.  - Several thousand stars on Github - A very active community, working on the standard and expanding the tools and themes ecosystem - 500,000 resume views on the hosted service",
+      "highlights": []
+    },
+    {
+      "company": "Electronic Frontier Foundation",
+      "position": "Contractor",
+      "website": "",
+      "startDate": "2014-03-01",
+      "summary": "I'm currently working as part of a small team to update part of EFF's website and build open source tools to allow better engagement with legislators.",
+      "highlights": [],
+      "endDate": "2015-01-01"
+    },
+    {
+      "company": "Drone Hire",
+      "position": "Co Founder",
+      "website": "",
+      "startDate": "2013-11-01",
+      "summary": "Built and designed the website with Rails. Grew the database to contain over 500 businesses. Facilitated thousands of quotes and generating business for our users.  Deprecated: This site was shut down in late 2015.",
+      "highlights": [],
+      "endDate": "2015-10-01"
+    },
+    {
+      "company": "Earbits (YCombinator 2011)",
+      "position": "Chief Technology Officer",
+      "website": "",
+      "startDate": "2012-11-01",
+      "summary": "Started off as a front end developer but took on the role of CTO in early 2013. The application frontend is built with Javascript and organized as a single page application that talks to a collection of Rails web servers which are connected to MongoDB.  - Managed a small team of developers and designers - Built the entire frontend application with Backbone.js - Transferred all of the infrastructure from Heroku to AWS",
+      "highlights": [],
+      "endDate": "2016-01-01"
+    },
+    {
+      "company": "CDNJS",
+      "position": "Co-Founder",
+      "website": "",
+      "startDate": "2011-12-01",
+      "summary": "Following Google’s CDN for jQuery, we decided to start a CDN for the less popular Javascript frameworks. The CDN is community moderated and open source on GitHub. We secured a partnership with Cloudflare who now supports the infrastructure.  - Millions of sites use the CDN in production - Larger market share than Yahoo's and Microsoft's content distribution network - We serve hundreds of billions request a month - Contains over 1800 popular Javascript libraries - Millions of developers visit the site per year",
+      "highlights": []
+    },
+    {
+      "company": "Ephox",
+      "position": "Front End Developer",
+      "website": "",
+      "startDate": "2011-07-01",
+      "summary": "Ephox is a worldwide company who is heavily involved with the development of TinyMce and enterprise editors. My primary role included building front-end widgets and applications. Worked on a major product using Backbone.js as a base. Heavily involved in UI/UX design and wire-framing. Also spend a lot of time designing API specifications and documentation.",
+      "highlights": [],
+      "endDate": "2012-07-01"
+    }
+  ],
+  "education": [
+    {
+      "institution": "The University of Queensland",
+      "area": "",
+      "studyType": "Bachelor’s Degree",
+      "startDate": "2008-01-01",
+      "gpa": "",
+      "courses": [],
+      "endDate": "2010-01-01"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Backbone Tutorials",
+      "publisher": "Leanpub",
+      "releaseDate": "2011-12-01",
+      "website": "https://leanpub.com/backbonetutorials",
+      "summary": "I write tutorials and blog post regarding the popular Javascript framework Backbone.js. The tutorials cover a range of topics regarding front end development aimed at beginners, experts and anyone in between.  - Over two million unique visitors a year - 25,000+ ebook downloads - 250,000 Youtube views - Spawned another project called backboneboilerplate.com"
+    }
+  ],
+  "skills": [
+    {
+      "name": "JavaScript",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "CSS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Web Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Front-end",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Node.js",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Backbone.js",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "jQuery",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "HTML",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Web Applications",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Ruby on Rails",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "PHP",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Open Source",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "HTML 5",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "AJAX",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "APIs",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "HTML5",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Usability",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Ruby",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Git",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "MVC",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "JSON",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Agile Methodologies",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Web Services",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "User Experience",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Mobile Applications",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "CoffeeScript",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Test Driven Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "MongoDB",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "MySQL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Amazon Web Services (AWS)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Software Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Github",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "XML",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "SQL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Linux",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Architecture",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "REST",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Apache",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Programming",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Python",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Testing",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "WordPress",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Scrum",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "E-commerce",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Software Engineering",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Subversion",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Networking",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "React.js",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Redux",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "React",
+      "level": "",
+      "keywords": []
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native or bilingual proficiency"
+    }
+  ],
+  "references": [],
+  "projects": [
+    {
+      "name": "EFF Action Center",
+      "startDate": "2015-01-01",
+      "summary": "The Action Center Platform is an open-source ruby on rails based content management system that lets EFF members take action online. The platform brings together tools for emailing, calling, and tweeting at elected officials, and makes it easy for EFF employees to quickly introduce new campaigns and measure their efficacy.",
+      "url": "https://act.eff.org"
+    },
+    {
+      "name": "Kalei Style Guide",
+      "startDate": "2012-06-01",
+      "summary": "Generates bootstrap-like documentation for your own CSS! This project aims at making sure your style sheets are fully documented whilst being synchronized with your webpages styles. To do this it actually uses your live stylesheets in so that at anytime you can review how your styleguide looks.",
+      "url": "http://kaleistyleguide.com"
+    }
+  ]
+}
