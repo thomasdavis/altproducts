@@ -491,7 +491,7 @@ var FooterLinks = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Header, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_routes__WEBPACK_IMPORTED_MODULE_4__["Link"], {
     href: "/",
     passHref: true
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Logo, null, "JARESUME ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Menu__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Logo, null, "REMITTANCE ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Menu__WEBPACK_IMPORTED_MODULE_2__["default"], {
     auth: auth,
     user: user
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ContentContainer, {
@@ -823,14 +823,6 @@ var Logo = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templa
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MenuItem, null, "Logout")));
   } else {
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Menu, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_routes__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-      prefetch: true,
-      route: "browse",
-      passHref: true
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MenuItem, null, "Browse")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_routes__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-      prefetch: true,
-      route: "chat",
-      passHref: true
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MenuItem, null, "Chat")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_routes__WEBPACK_IMPORTED_MODULE_1__["Link"], {
       prefetch: true,
       route: "login",
       passHref: true
@@ -17252,14 +17244,14 @@ var BelowHero = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_t
     user: user,
     auth: auth,
     isTouch: isTouch
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_4___default.a, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", null, "Jaresume - The platform for professionals to network")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(HomeContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Hero, {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_4___default.a, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", null, "Remittance - The platform for MONEY")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(HomeContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Hero, {
     isTouch: isTouch,
     style: {
       paddingTop: isTouch ? "40px" : "0"
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(HeroLeft, {
     isTouch: isTouch
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TagLine, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Text__WEBPACK_IMPORTED_MODULE_7__["Title"], null, "The platform for", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "professionals to network", " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TagLineSpacer, null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Buttons, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(HomeButton, {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TagLine, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Text__WEBPACK_IMPORTED_MODULE_7__["Title"], null, "The platform for", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "MONEY", " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TagLineSpacer, null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Buttons, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(HomeButton, {
     onClick: function onClick() {
       next_router__WEBPACK_IMPORTED_MODULE_3___default.a.push("/signup");
     }
@@ -17271,43 +17263,7 @@ var BelowHero = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_t
     isTouch: isTouch
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "/static/hero.png"
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Hero, {
-    isTouch: isTouch
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(HeroLeft, {
-    isTouch: isTouch
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TagLine, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Text__WEBPACK_IMPORTED_MODULE_7__["Title"], null, "Our", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Principles"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TagLineSpacer, null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Buttons, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(HomeButton, {
-    onClick: function onClick() {
-      next_router__WEBPACK_IMPORTED_MODULE_3___default.a.push("/browse");
-    }
-  }, "Browse the community"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(HeroRight, {
-    isTouch: isTouch
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BulletPoints, {
-    isTouch: isTouch
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "You own your data, import/export anytime"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "No spam"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Networking should be enjoyable"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "We will listen to our users"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Genuine two-way trust"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Privacy")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Hero, {
-    isTouch: isTouch
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(HeroLeft, {
-    isTouch: isTouch
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TagLine, null, " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Text__WEBPACK_IMPORTED_MODULE_7__["Title"], null, "The", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Features"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TagLineSpacer, null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Buttons, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Text__WEBPACK_IMPORTED_MODULE_7__["SubTitle"], {
-    style: {
-      textAlign: "left",
-      fontWeight: "400"
-    }
-  }, "We will build this product maintaining a strict minimalism, focusing on what is important, and suggestions from our community."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(HeroRight, {
-    isTouch: isTouch
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BulletPoints, {
-    isTouch: isTouch
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Connect with people you know"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Public profile (configurable visibility)"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Your contact information is only available to connections"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "A slick address book"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Periodic email backups of your data"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Fast and convenient apps for networking events")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Hero, {
-    isTouch: isTouch,
-    style: {
-      marginBottom: isTouch ? "0" : "40px"
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(HeroLeft, {
-    isTouch: isTouch
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TagLine, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Text__WEBPACK_IMPORTED_MODULE_7__["Title"], null, "Our", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Vision"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TagLineSpacer, null))), !isTouch && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(HeroRight, {
-    isTouch: isTouch
-  }, "\xA0")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BelowHero, {
-    isTouch: isTouch
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Text__WEBPACK_IMPORTED_MODULE_7__["SubTitle"], null, "How do you currently maintain your professional network?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Text__WEBPACK_IMPORTED_MODULE_7__["Body"], null, "The most common answer will be LinkedIn, but who has many nice things to say about them? They value recruiters over candidates. Have you ever wanted to browse people you have connected with over the years and been frustrated by a clunky interface? Have you ever wanted to see what your connections are saying about the industry, but struggled to find their opinions in the sea of spam that is LinkedIn? We aren\u2019t haters, but they have really dropped their game."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Text__WEBPACK_IMPORTED_MODULE_7__["SubTitle"], null, "How often have you lost your resume?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Text__WEBPACK_IMPORTED_MODULE_7__["Body"], null, "Our platform will email it to you periodically as a backup in an open standard called JSON Resume which you can take to any other service or maintain by yourself."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Text__WEBPACK_IMPORTED_MODULE_7__["SubTitle"], null, "How do you connect with a new professional acquaintance?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Text__WEBPACK_IMPORTED_MODULE_7__["Body"], null, " ", "Facebook, Instagram, Twitter? LinkedIn was supposed to be the answer but who even uses their app? Why is it so hard to just get your phone out and quickly add someone to your professional network? User experience will be one of our main focuses."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Text__WEBPACK_IMPORTED_MODULE_7__["SubTitle"], null, "Tired of always filling out your professional history?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Text__WEBPACK_IMPORTED_MODULE_7__["Body"], null, "Jaresume relies on an open community based specification of which we will encourage development and invest our time into as we believe it to be a net positive for the world. If all services agree to use the format, you could just upload the file any time a service needs your data."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Text__WEBPACK_IMPORTED_MODULE_7__["SubTitle"], null, "How do we make money?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Text__WEBPACK_IMPORTED_MODULE_7__["Body"], null, "We have a few cool ideas up our sleeves which we will elaborate on at a future date, and we believe it is honest to state we will most likely explore traditional revenue models. That being said, we won\u2019t stray from our principles. Please join our discussion board and suggest your ideas too."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null))));
+  })))));
 });
     (function (Component, route) {
       if(!Component) return

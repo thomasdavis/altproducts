@@ -80,7 +80,7 @@ export default ({ children, auth, user, background, isTouch }) => {
     <div>
       <Header>
         <Link href="/" passHref>
-          <Logo>JARESUME </Logo>
+          <Logo>REMITTANCE </Logo>
         </Link>
 
         <Menu auth={auth} user={user} />

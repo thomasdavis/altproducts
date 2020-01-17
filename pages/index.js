@@ -99,7 +99,7 @@ export default props => {
   return (
     <Layout user={user} auth={auth} isTouch={isTouch}>
       <Head>
-        <title>Jaresume - The platform for professionals to network</title>
+        <title>Remittance - The platform for MONEY</title>
       </Head>
       <HomeContainer>
         <Hero isTouch={isTouch} style={{ paddingTop: isTouch ? "40px" : "0" }}>
@@ -107,7 +107,7 @@ export default props => {
             <TagLine>
               <Title>
                 The platform for
-                <br />professionals to network{" "}
+                <br />MONEY{" "}
               </Title>
               <TagLineSpacer />
             </TagLine>
@@ -134,155 +134,7 @@ export default props => {
             </HeroRight>
           )}
         </Hero>
-        <Hero isTouch={isTouch}>
-          <HeroLeft isTouch={isTouch}>
-            <TagLine>
-              <Title>
-                Our
-                <br />Principles
-              </Title>
-              <TagLineSpacer />
-            </TagLine>
-            <Buttons>
-              <HomeButton
-                onClick={() => {
-                  Router.push("/browse");
-                }}
-              >
-                Browse the community
-              </HomeButton>
-            </Buttons>
-          </HeroLeft>
-          <HeroRight isTouch={isTouch}>
-            <BulletPoints isTouch={isTouch}>
-              <li>You own your data, import/export anytime</li>
-              <li>No spam</li>
-              <li>Networking should be enjoyable</li>
-              <li>We will listen to our users</li>
-              <li>Genuine two-way trust</li>
-              <li>Privacy</li>
-            </BulletPoints>
-          </HeroRight>
-        </Hero>
-        <Hero isTouch={isTouch}>
-          <HeroLeft isTouch={isTouch}>
-            <TagLine>
-              {" "}
-              <Title>
-                The
-                <br />Features
-              </Title>
-              <TagLineSpacer />
-            </TagLine>
-            <Buttons>
-              <SubTitle style={{ textAlign: "left", fontWeight: "400" }}>
-                We will build this product maintaining a strict minimalism,
-                focusing on what is important, and suggestions from our
-                community.
-              </SubTitle>
-            </Buttons>
-          </HeroLeft>
-          <HeroRight isTouch={isTouch}>
-            <BulletPoints isTouch={isTouch}>
-              <li>Connect with people you know</li>
-              <li>Public profile (configurable visibility)</li>
-              <li>Your contact information is only available to connections</li>
-              <li>A slick address book</li>
-              <li>Periodic email backups of your data</li>
-              <li>Fast and convenient apps for networking events</li>
-            </BulletPoints>
-          </HeroRight>
-        </Hero>
-        <Hero
-          isTouch={isTouch}
-          style={{ marginBottom: isTouch ? "0" : "40px" }}
-        >
-          <HeroLeft isTouch={isTouch}>
-            <TagLine>
-              <Title>
-                Our
-                <br />Vision
-              </Title>
-              <TagLineSpacer />
-            </TagLine>
-          </HeroLeft>
-          {!isTouch && <HeroRight isTouch={isTouch}>&nbsp;</HeroRight>}
-        </Hero>
-        <BelowHero isTouch={isTouch}>
-          <SubTitle>
-            How do you currently maintain your professional network?
-          </SubTitle>
-          <br />
-          <br />
-          <Body>
-            The most common answer will be LinkedIn, but who has many nice
-            things to say about them? They value recruiters over candidates.
-            Have you ever wanted to browse people you have connected with over
-            the years and been frustrated by a clunky interface? Have you ever
-            wanted to see what your connections are saying about the industry,
-            but struggled to find their opinions in the sea of spam that is
-            LinkedIn? We aren’t haters, but they have really dropped their game.
-          </Body>
-          <br />
-          <br />
-          <br />
 
-          <SubTitle>How often have you lost your resume?</SubTitle>
-          <br />
-          <br />
-          <Body>
-            Our platform will email it to you periodically as a backup in an
-            open standard called JSON Resume which you can take to any other
-            service or maintain by yourself.
-          </Body>
-          <br />
-          <br />
-          <br />
-
-          <SubTitle>
-            How do you connect with a new professional acquaintance?
-          </SubTitle>
-          <br />
-          <br />
-          <Body>
-            {" "}
-            Facebook, Instagram, Twitter? LinkedIn was supposed to be the answer
-            but who even uses their app? Why is it so hard to just get your
-            phone out and quickly add someone to your professional network? User
-            experience will be one of our main focuses.
-          </Body>
-          <br />
-          <br />
-          <br />
-          <SubTitle>
-            Tired of always filling out your professional history?
-          </SubTitle>
-          <br />
-          <br />
-          <Body>
-            Jaresume relies on an open community based specification of which we
-            will encourage development and invest our time into as we believe it
-            to be a net positive for the world. If all services agree to use the
-            format, you could just upload the file any time a service needs your
-            data.
-          </Body>
-          <br />
-          <br />
-          <br />
-          <SubTitle>How do we make money?</SubTitle>
-          <br />
-          <br />
-          <Body>
-            We have a few cool ideas up our sleeves which we will elaborate on
-            at a future date, and we believe it is honest to state we will most
-            likely explore traditional revenue models. That being said, we won’t
-            stray from our principles. Please join our discussion board and
-            suggest your ideas too.
-          </Body>
-          <br />
-          <br />
-          <br />
-        </BelowHero>
       </HomeContainer>
     </Layout>
   );

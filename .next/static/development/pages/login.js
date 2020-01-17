@@ -569,7 +569,7 @@ var FooterLinks = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Header, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_routes__WEBPACK_IMPORTED_MODULE_4__["Link"], {
     href: "/",
     passHref: true
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Logo, null, "JARESUME ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Menu__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Logo, null, "REMITTANCE ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Menu__WEBPACK_IMPORTED_MODULE_2__["default"], {
     auth: auth,
     user: user
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ContentContainer, {
@@ -1063,14 +1063,6 @@ var Logo = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templa
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MenuItem, null, "Logout")));
   } else {
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Menu, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_routes__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-      prefetch: true,
-      route: "browse",
-      passHref: true
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MenuItem, null, "Browse")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_routes__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-      prefetch: true,
-      route: "chat",
-      passHref: true
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MenuItem, null, "Chat")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_routes__WEBPACK_IMPORTED_MODULE_1__["Link"], {
       prefetch: true,
       route: "login",
       passHref: true

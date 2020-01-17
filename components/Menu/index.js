@@ -60,13 +60,7 @@ export default props => {
   } else {
     return (
       <Menu>
-        <Link prefetch route="browse" passHref>
-          <MenuItem>Browse</MenuItem>
-        </Link>
-
-        <Link prefetch route="chat" passHref>
-          <MenuItem>Chat</MenuItem>
-        </Link>
+        
         <Link prefetch route="login" passHref>
           <MenuItem>Login</MenuItem>
         </Link>
