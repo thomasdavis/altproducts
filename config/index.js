@@ -1,5 +1,5 @@
 export default {
   api: {
-    host: "https://api.jaresume.com"
+    host: "https://remittance-server.herokuapp.com"
   }
 };

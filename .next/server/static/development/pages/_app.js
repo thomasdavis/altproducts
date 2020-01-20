@@ -104,7 +104,7 @@ module.exports =
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   api: {
-    host: "https://api.jaresume.com"
+    host: "https://remittance-server.herokuapp.com"
   }
 });
 
