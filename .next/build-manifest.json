@@ -6,17 +6,42 @@
     "/_app": [
       "static/runtime/webpack.js",
       "static/runtime/main.js",
-      "static/webpack/static/runtime/main.js.122b6b4cd2d46d2face6.hot-update.js"
+      "static/webpack/static/runtime/main.js.d071e80389ba8ea874c2.hot-update.js"
     ],
     "/_error": [
       "static/runtime/webpack.js",
       "static/runtime/main.js",
-      "static/webpack/static/runtime/main.js.122b6b4cd2d46d2face6.hot-update.js"
+      "static/webpack/static/runtime/main.js.d071e80389ba8ea874c2.hot-update.js"
     ],
     "/dashboard": [
       "static/runtime/webpack.js",
       "static/runtime/main.js",
-      "static/webpack/static/runtime/main.js.122b6b4cd2d46d2face6.hot-update.js"
+      "static/webpack/static/runtime/main.js.d071e80389ba8ea874c2.hot-update.js"
+    ],
+    "/index": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js",
+      "static/webpack/static/runtime/main.js.d071e80389ba8ea874c2.hot-update.js"
+    ],
+    "/logout": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js",
+      "static/webpack/static/runtime/main.js.d071e80389ba8ea874c2.hot-update.js"
+    ],
+    "/login": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js",
+      "static/webpack/static/runtime/main.js.d071e80389ba8ea874c2.hot-update.js"
+    ],
+    "/signup": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js",
+      "static/webpack/static/runtime/main.js.d071e80389ba8ea874c2.hot-update.js"
+    ],
+    "/": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js",
+      "static/webpack/static/runtime/main.js.d071e80389ba8ea874c2.hot-update.js"
     ]
   }
 }

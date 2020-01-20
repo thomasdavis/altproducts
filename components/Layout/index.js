@@ -110,14 +110,14 @@ export default ({ children, auth, user, background, isTouch }) => {
         <Menu auth={auth} user={user} />
       </Header>
       <Container>
-      <SideMenuContainer>
+      {auth && <SideMenuContainer>
         <SideMenu>
         <SideMenuItem>Dashboard</SideMenuItem>
         <SideMenuItem>Transfers</SideMenuItem>
         <SideMenuItem>Documents</SideMenuItem>
           <SideMenuItem>History</SideMenuItem>
         </SideMenu>
-      </SideMenuContainer>
+      </SideMenuContainer>}
       <ContentContainer background={background || "#fff"}>
         {children}
         {/* <Footer>
