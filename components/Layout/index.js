@@ -39,7 +39,6 @@ const Logo = styled.a`
   }
 `;
 const Container = styled.div`
-  background: blue;
   display: flex;
   min-height: 100%;
 `;

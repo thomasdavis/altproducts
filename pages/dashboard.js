@@ -6,6 +6,7 @@ import styled from "styled-components";
 import Head from "next/head";
 
 import { Link } from "../components/Link";
+import Icon from "../components/Icon";
 import config from "../config";
 import Layout from "../components/Layout";
 import { Title, SubTitle, Body } from "../components/Text";
@@ -17,42 +18,18 @@ const DashboardContainer = styled.div`
   width: 1040px;
   margin: auto;
 `;
-const HeroContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  margin-bottom: 100px;
+const KycBoxContainer = styled.div`
+display: flex;
+justify-content: space-evenly;
+width: 600px;
 `;
-const Left = styled.div`
-  flex: 0 0 auto;
-  width: 500px;
-  margin-right: 40px;
+const KycBox = styled.div`
+  width: 120px;
+  height: 120px;
+  background: grey;
+  border-radius: 6px;
+
 `;
-const Right = styled.div`
-  flex: 0 0 auto;
-  width: 500px;
-`;
-const BulletPoints = styled.ul`
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align: left;
-  padding-top: 20px;
-  li {
-    font-size: 18px;
-    position: relative;
-    :before {
-      content: "";
-      position: absolute;
-      left: -16px;
-      top: 9px;
-      width: 8px;
-      height: 8px;
-      background: ${({ theme }) => theme.color.yellow.toString()};
-    }
-    margin-bottom: 10px;
-  }
-`;
-const Point = styled.div``;
 export default class Dashboard extends Component {
   render() {
     const { auth, user, isTouch } = this.props;
@@ -62,6 +39,14 @@ export default class Dashboard extends Component {
         {isTouch && <TouchDashboard auth={auth} user={user} />}
         {!isTouch && (
           <DashboardContainer>
+          <KycBoxContainer>
+          <KycBox>                      <Icon icon="Print" />
+</KycBox>
+          <KycBox>                      <Icon icon="Print" />
+</KycBox>
+          <KycBox>                      <Icon icon="Print" />
+</KycBox>
+          </KycBoxContainer>
             asdasds
           </DashboardContainer>
         )}
