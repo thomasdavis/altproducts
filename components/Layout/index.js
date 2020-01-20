@@ -38,12 +38,36 @@ const Logo = styled.a`
     color: ${({ theme }) => theme.color.yellow.toString()};
   }
 `;
-
+const Container = styled.div`
+  background: blue;
+  display: flex;
+  min-height: 100%;
+`;
 const ContentContainer = styled.div`
   min-height: 100%;
   background: ${p => p.background};
 `;
+const SideMenuContainer = styled.div`
+  background: rgb(247,208,81);
+  padding-top: 80px;
+`;
 
+const SideMenu = styled.div`
+  width: 200px;
+  padding: 20px;
+`;
+const SideMenuItem = styled.div`
+background: black;
+padding: 10px;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+  &:hover {
+    color: rgb(247,208,81);
+    background: #222;
+  }
+`
 const Content = styled.div`
   height: 100%;
   background: ${p => p.background};
@@ -62,6 +86,7 @@ const Footer = styled.div`
 const FooterLinks = styled.div`
   display: flex;
 `;
+
 export default ({ children, auth, user, background, isTouch }) => {
   if (auth === null) {
   }
@@ -85,6 +110,15 @@ export default ({ children, auth, user, background, isTouch }) => {
 
         <Menu auth={auth} user={user} />
       </Header>
+      <Container>
+      <SideMenuContainer>
+        <SideMenu>
+        <SideMenuItem>Dashboard</SideMenuItem>
+        <SideMenuItem>Transfers</SideMenuItem>
+        <SideMenuItem>Documents</SideMenuItem>
+          <SideMenuItem>History</SideMenuItem>
+        </SideMenu>
+      </SideMenuContainer>
       <ContentContainer background={background || "#fff"}>
         {children}
         {/* <Footer>
@@ -123,6 +157,8 @@ export default ({ children, auth, user, background, isTouch }) => {
         {/* </FooterLinks>
         </Footer> */}
       </ContentContainer>
+      </Container>
+
     </div>
   );
 };

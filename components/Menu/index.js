@@ -28,31 +28,6 @@ export default props => {
     return (
       <Menu>
         <Link prefetch route="dashboard" passHref>
-          <MenuItem>Dashboard</MenuItem>
-        </Link>
-
-        <Link prefetch route="chat" passHref>
-          <MenuItem>Chat</MenuItem>
-        </Link>
-        <Link prefetch route="browse" passHref>
-          <MenuItem>Browse</MenuItem>
-        </Link>
-        <Link
-          prefetch
-          route="profile"
-          params={{ username: user.username || "na" }}
-          passHref
-        >
-          <MenuItem>Profile</MenuItem>
-        </Link>
-        <Link prefetch route="connections" passHref>
-          <MenuItem>Connections</MenuItem>
-        </Link>
-
-        <Link prefetch route="settings" passHref>
-          <MenuItem>Settings</MenuItem>
-        </Link>
-        <Link prefetch route="logout" passHref>
           <MenuItem>Logout</MenuItem>
         </Link>
       </Menu>
@@ -60,7 +35,7 @@ export default props => {
   } else {
     return (
       <Menu>
-        
+
         <Link prefetch route="login" passHref>
           <MenuItem>Login</MenuItem>
         </Link>
