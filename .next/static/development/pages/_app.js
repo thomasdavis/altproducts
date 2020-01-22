@@ -19792,7 +19792,8 @@ var getTheme = function getTheme(_ref) {
       black: color__WEBPACK_IMPORTED_MODULE_6___default()("#252525"),
       grey: color__WEBPACK_IMPORTED_MODULE_6___default()("#EFEFEF"),
       white: color__WEBPACK_IMPORTED_MODULE_6___default()("#FFFFFF"),
-      red: color__WEBPACK_IMPORTED_MODULE_6___default()("#FF5F5F")
+      red: color__WEBPACK_IMPORTED_MODULE_6___default()("#D36135"),
+      green: color__WEBPACK_IMPORTED_MODULE_6___default()("#7FB069")
     },
     fontFamily: {
       heading: "EB Garamond, serif",

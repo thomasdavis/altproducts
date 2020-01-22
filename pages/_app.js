@@ -14,7 +14,8 @@ const getTheme = ({ touch }) => {
       black: Color("#252525"),
       grey: Color("#EFEFEF"),
       white: Color("#FFFFFF"),
-      red: Color("#FF5F5F")
+      red: Color("#D36135"),
+      green: Color("#7FB069")
     },
     fontFamily: {
       heading: "EB Garamond, serif",

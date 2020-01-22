@@ -45,9 +45,10 @@ const Container = styled.div`
 const ContentContainer = styled.div`
   min-height: 100%;
   background: ${p => p.background};
+  padding-left: 40px;
 `;
 const SideMenuContainer = styled.div`
-  background: rgb(247,208,81);
+  background: rgb(247, 208, 81);
   padding-top: 80px;
 `;
 
@@ -56,17 +57,17 @@ const SideMenu = styled.div`
   padding: 20px;
 `;
 const SideMenuItem = styled.div`
-background: black;
-padding: 10px;
+  background: black;
+  padding: 10px;
   color: white;
   text-align: center;
   margin-bottom: 10px;
   cursor: pointer;
   &:hover {
-    color: rgb(247,208,81);
+    color: rgb(247, 208, 81);
     background: #222;
   }
-`
+`;
 const Content = styled.div`
   height: 100%;
   background: ${p => p.background};
@@ -110,17 +111,19 @@ export default ({ children, auth, user, background, isTouch }) => {
         <Menu auth={auth} user={user} />
       </Header>
       <Container>
-      {auth && <SideMenuContainer>
-        <SideMenu>
-        <SideMenuItem>Dashboard</SideMenuItem>
-        <SideMenuItem>Transfers</SideMenuItem>
-        <SideMenuItem>Documents</SideMenuItem>
-          <SideMenuItem>History</SideMenuItem>
-        </SideMenu>
-      </SideMenuContainer>}
-      <ContentContainer background={background || "#fff"}>
-        {children}
-        {/* <Footer>
+        {auth && (
+          <SideMenuContainer>
+            <SideMenu>
+              <SideMenuItem>Dashboard</SideMenuItem>
+              <SideMenuItem>Transfers</SideMenuItem>
+              <SideMenuItem>Documents</SideMenuItem>
+              <SideMenuItem>History</SideMenuItem>
+            </SideMenu>
+          </SideMenuContainer>
+        )}
+        <ContentContainer background={background || "#fff"}>
+          {children}
+          {/* <Footer>
           <Body
             style={{ lineHeight: "30px", marginLeft: "20px", fontSize: "14px" }}
           >
@@ -128,7 +131,7 @@ export default ({ children, auth, user, background, isTouch }) => {
             <Link to="https://perceptiondesign.com">Perception Design</Link>
           </Body>
           <FooterLinks> */}
-        {/* <Body
+          {/* <Body
               style={{
                 lineHeight: "30px",
                 marginRight: "20px",
@@ -144,7 +147,7 @@ export default ({ children, auth, user, background, isTouch }) => {
                 Privacy
               </Link>
             </Body> */}
-        {/* <Body
+          {/* <Body
               style={{
                 lineHeight: "30px",
                 marginRight: "20px",
@@ -153,11 +156,10 @@ export default ({ children, auth, user, background, isTouch }) => {
             >
               <Link to="https://perceptiondesign.com">Terms</Link>
             </Body> */}
-        {/* </FooterLinks>
+          {/* </FooterLinks>
         </Footer> */}
-      </ContentContainer>
+        </ContentContainer>
       </Container>
-
     </div>
   );
 };

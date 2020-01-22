@@ -204,9 +204,6 @@ function (_Document) {
         name: "viewport",
         content: "width=device-width, initial-scale=1"
       }), this.props.styleTags, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
-        href: "https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/5.24.7/jsoneditor.min.css",
-        rel: "stylesheet"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
         href: "https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i,600,600i,700,700i,800,800i|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i",
         rel: "stylesheet"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
@@ -215,8 +212,6 @@ function (_Document) {
       }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
         rel: "icon",
         href: "/static/favicon.ico"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
-        src: "https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/5.24.7/jsoneditor.min.js"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
         dangerouslySetInnerHTML: {
           __html: "\n                * {\n                  box-sizing: border-box;\n                }\n            html {\n              overflow-y: scroll;\n              height: 100%;\n            }\n            body {\n              margin: 0;\n              font-family: Source Sans Pro, sans-serif;\n              height: 100%;\n            }\n            body > div:first-child {\n             height: 100%;\n             margin: 0;\n             }\n\n             #__next > div:first-child  {\n               height: 100%;\n               margin: 0;\n             }\n             #__next {\n               height: 100%;\n               margin: 0;\n             }\n            h1,h2,h3,h4,h5 {\n              font-family: EB Garamond, serif;\n              text-transform: uppercase;\n\n            }\n          "
