@@ -150,6 +150,7 @@ function (_Document) {
   _createClass(MyDocument, [{
     key: "render",
     value: function render() {
+      var agent = this.props.agent;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("html", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_1__["Head"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
         charset: "utf-8"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", null, "Jaresume"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -206,6 +207,10 @@ function (_Document) {
       }), this.props.styleTags, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
         href: "https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i,600,600i,700,700i,800,800i|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i",
         rel: "stylesheet"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
+        dangerouslySetInnerHTML: {
+          __html: "\n              window.agent = ".concat(agent, ";\n            ")
+        }
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
         rel: "shortcut icon",
         href: "/static/favicon.ico"
@@ -244,12 +249,25 @@ function (_Document) {
 
       if (req) {
         isPdf = req.originalUrl.substr(0, 4) === "/pdf";
+      }
+
+      var agent = 1;
+
+      if (req.originalUrl.indexOf("smith") !== -1) {
+        agent = 1;
+      } else {
+        agent = 2;
       } // Step 4: Pass styleTags as a prop
 
 
+      console.log("the fuck");
+      console.log("the fuck");
+      console.log("the fuck");
+      console.log(this);
       return _objectSpread({}, page, {
         styleTags: styleTags,
-        isPdf: isPdf
+        isPdf: isPdf,
+        agent: agent
       });
     }
   }]);

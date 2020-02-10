@@ -28,6 +28,7 @@ const BodyText = styled.div`
   line-height: ${({ theme }) => theme.lineHeight.body};
   letter-spacing: -0.009em;
   text-rendering: optimizeLegibility;
+  text-align: left;
 `;
 export const Body = props => {
   const { children } = props;

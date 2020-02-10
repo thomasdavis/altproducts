@@ -17,11 +17,21 @@ export default class MyDocument extends Document {
     if (req) {
       isPdf = req.originalUrl.substr(0, 4) === "/pdf";
     }
+    let agent = 1;
+    if (req.originalUrl.indexOf("smith") !== -1) {
+      agent = 1;
+    } else {
+      agent = 2;
+    }
     // Step 4: Pass styleTags as a prop
-    return { ...page, styleTags, isPdf };
+    console.log("the fuck");
+    console.log("the fuck");
+    console.log("the fuck");
+    console.log(this);
+    return { ...page, styleTags, isPdf, agent };
   }
-
   render() {
+    const { agent } = this.props;
     return (
       <html>
         <Head>
@@ -67,6 +77,13 @@ export default class MyDocument extends Document {
           <link
             href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i,600,600i,700,700i,800,800i|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i"
             rel="stylesheet"
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+              window.agent = ${agent};
+            `
+            }}
           />
           <link rel="shortcut icon" href="/static/favicon.ico" />{" "}
           <link rel="icon" href="/static/favicon.ico" />

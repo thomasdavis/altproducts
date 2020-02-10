@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import styled from "styled-components";
 import Router from "next/router";
 import Head from "next/head";
+import { Link } from "../routes";
 
 import Layout from "../components/Layout";
 import Button from "../components/Button";
@@ -10,17 +11,26 @@ import { Title, SubTitle, Body } from "../components/Text";
 
 const HomeContainer = styled.div`
   background: #fff;
-  padding-top: 80px;
+  padding-top: 0px;
 `;
 const Hero = styled.div`
   text-align: center;
   display: flex;
-  justify-content: space-between;
+
+  justify-content: space-around;
   flex-direction: ${({ isTouch }) => (isTouch ? "column" : "row")};
   width: ${({ isTouch }) => (isTouch ? "100%" : "1000px")};
   padding: ${({ isTouch }) => (isTouch ? "20px" : "0")};
   margin: auto;
-  margin-bottom: ${({ isTouch }) => (isTouch ? "20px" : "180px")};
+  margin-bottom: ${({ isTouch }) => (isTouch ? "20px" : "40px")};
+  margin-top: 80px;
+`;
+const ProductContainer = styled.div`
+  display: flex;
+`;
+const ProductImage = styled.img``;
+const ProductSection = styled.div`
+  padding-left: 40px;
 `;
 const HeroLeft = styled.div`
   flex: 0 0 auto;
@@ -30,6 +40,9 @@ const HeroLeft = styled.div`
   margin-right: ${({ isTouch }) => (isTouch ? "0" : "100px")};
   align-items: flex-start;
   justify-content: center;
+`;
+const HeroImage = styled.img`
+  width: 200px;
 `;
 const HeroRight = styled.div`
   flex: 0 0 auto;
@@ -105,36 +118,66 @@ export default props => {
         <Hero isTouch={isTouch} style={{ paddingTop: isTouch ? "40px" : "0" }}>
           <HeroLeft isTouch={isTouch}>
             <TagLine>
-              <Title>
-                The platform for
-                <br />MONEY{" "}
-              </Title>
+              <Title>Pro Choice Products</Title>
               <TagLineSpacer />
             </TagLine>
+            <Body>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum placerat ipsum nec sem congue, ut tempus elit volutpat.
+              Nunc fringilla, elit nec rhoncus tempor, magna nunc mollis turpis,
+              ullamcorper semper sapien tellus sed orci.
+              <br />
+              Donec sit amet scelerisque urna, vitae vulputate erat. Donec
+              semper faucibus turpis, sit amet scelerisque magna eleifend eget.
+              Praesent at gravida odio.
+            </Body>
+            <br />
             <Buttons>
               <HomeButton
                 onClick={() => {
                   Router.push("/signup");
                 }}
               >
-                SIGNUP
-              </HomeButton>
-              <HomeButton
-                onClick={() => {
-                  Router.push("/login");
-                }}
-              >
-                LOGIN
+                SUBSCRIBE
               </HomeButton>
             </Buttons>
           </HeroLeft>
           {!isTouch && (
             <HeroRight isTouch={isTouch}>
-              <img src="/static/hero.png" />
+              <HeroImage src="/static/fabian.png" />
             </HeroRight>
           )}
         </Hero>
+        <TagLine>
+          <Title>Sleep</Title>
+          <TagLineSpacer />
+        </TagLine>
+        <ProductContainer>
+          <ProductImage
+            src={`https://picsum.photos/id/237/300/200?a=${Math.random()}`}
+          />
 
+          <ProductSection>
+            <SubTitle>EMF Dog Worms</SubTitle>
+            <br />
+            <Body>
+              <strong>~$120</strong>
+            </Body>
+            <br />
+            <Body>
+              Nam bibendum malesuada diam vitae porta. Curabitur aliquam mi
+              mattis, porta odio vel, auctor ligula. Vivamus quis ipsum ut est
+              ultricies venenatis accumsan id ipsum. Curabitur eu posuere magna.
+              Proin eu purus vitae nunc posuere aliquet. Class aptent taciti
+              sociosqu ad litora torquent per conubia nostra, per inceptos
+              himenaeos.
+            </Body>
+            <br />
+            <Link href="/dashboard" passHref>
+              Amazon
+            </Link>
+          </ProductSection>
+        </ProductContainer>
       </HomeContainer>
     </Layout>
   );

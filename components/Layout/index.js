@@ -48,7 +48,7 @@ const ContentContainer = styled.div`
   padding-left: 40px;
 `;
 const SideMenuContainer = styled.div`
-  background: rgb(247, 208, 81);
+  background: #7fb069;
   padding-top: 80px;
 `;
 
@@ -103,24 +103,24 @@ export default ({ children, auth, user, background, isTouch }) => {
   }
   return (
     <div>
-      <Header>
-        <Link href="/" passHref>
-          <Logo>REMITTANCE </Logo>
-        </Link>
-
-        <Menu auth={auth} user={user} />
-      </Header>
       <Container>
-        {auth && (
-          <SideMenuContainer>
-            <SideMenu>
-              <SideMenuItem>Dashboard</SideMenuItem>
-              <SideMenuItem>Transfers</SideMenuItem>
-              <SideMenuItem>Documents</SideMenuItem>
-              <SideMenuItem>History</SideMenuItem>
-            </SideMenu>
-          </SideMenuContainer>
-        )}
+        <SideMenuContainer>
+          <SideMenu>
+            <Link href="/dashboard" passHref>
+              <SideMenuItem>Sleep</SideMenuItem>
+            </Link>
+            <Link href="/settings" passHref>
+              <SideMenuItem>Radiation</SideMenuItem>
+            </Link>
+            <Link href="/settings" passHref>
+              <SideMenuItem>Diet</SideMenuItem>
+            </Link>
+            <Link href="/settings" passHref>
+              <SideMenuItem>Sex</SideMenuItem>
+            </Link>
+          </SideMenu>
+        </SideMenuContainer>
+
         <ContentContainer background={background || "#fff"}>
           {children}
           {/* <Footer>

@@ -9,16 +9,32 @@ const { join } = require("path");
 const { parse } = require("url");
 const routes = require("./routes");
 const app = next({ dev: process.env.NODE_ENV !== "production" });
-const handler = routes.getRequestHandler(app);
 
+console.log("asdasd");
+console.log("asdasd");
+console.log("asdasd");
+console.log("asdasd");
 // With express
 const express = require("express");
+
 app.prepare().then(() => {
+  const handler = routes.getRequestHandler(
+    app,
+    ({ req, res, route, query }) => {
+      app.render(req, res, route.page, query);
+    }
+  );
   express()
     .use((req, res, next) => {
       const parsedUrl = parse(req.url, true);
       const { pathname } = parsedUrl;
-
+      res.on("finish", () => {
+        console.log("ahsdkahgdkajdgsakjshd");
+        console.log("ahsdkahgdkajdgsakjshd");
+        console.log("ahsdkahgdkajdgsakjshd");
+        console.log("ahsdkahgdkajdgsakjshd");
+        console.log("ahsdkahgdkajdgsakjshd");
+      });
       if (pathname === "/service-worker.js") {
         const filePath = join(__dirname, ".next", pathname);
 

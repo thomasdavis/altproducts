@@ -6,9 +6,9 @@ const Button = styled.div`
   font-size: 18px;
   background: ${({ theme, disabled }) => {
     if (disabled) {
-      return theme.color.yellow.grayscale().toString();
+      return theme.color.green.grayscale().toString();
     } else {
-      return theme.color.yellow.toString();
+      return theme.color.green.toString();
     }
   }};
   user-select: none;
@@ -19,8 +19,8 @@ const Button = styled.div`
   :hover {
     background: ${({ theme, disabled }) =>
       disabled
-        ? theme.color.yellow.grayscale().toString()
-        : theme.color.yellow.darken(0.2).toString()};
+        ? theme.color.green.grayscale().toString()
+        : theme.color.green.darken(0.2).toString()};
   }
 `;
 export default props => {
