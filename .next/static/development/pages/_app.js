@@ -19933,12 +19933,7 @@ function (_App) {
         theme: getTheme({
           touch: isReallyTouch
         })
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Component, appProps)), showTemper && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
-        "data-id": "doqfoueb",
-        src: "https://temper.io/d.js",
-        class: "temper",
-        async: true
-      }));
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Component, appProps)));
     }
   }], [{
     key: "getInitialProps",

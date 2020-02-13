@@ -400,16 +400,52 @@ const BelowHero = styled.div`
 `;
 export default props => {
   const { user, auth, isTouch } = props;
+  // emf , deep sleep, mitochrondrial, red light, grounding
+  // My friend and I are putting together list of unheard of health products. If you are interested in EMF, deep sleep, mitochrondria, red light and grounding etc, quickly check us out. We would love your feedback!
   return (
     <Layout user={user} auth={auth} isTouch={isTouch}>
       <Head>
-        <title>Remittance - The platform for MONEY</title>
+        <title>
+          Anthro Generator - A directory of unheard health problem solutions
+        </title>
+        <meta
+          name="title"
+          content="Anthro Generator - A directory of unheard health problem solutions"
+        />
+        <meta
+          name="description"
+          content="My friend and I are putting together list of unheard of health products. If you are interested in EMF, deep sleep, mitochrondria, red light and grounding etc, quickly check us out. We would love your feedback!"
+        />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://anthrogenerator.com/" />
+        <meta property="og:title" content="Anthro Generator" />
+        <meta
+          property="og:description"
+          content="My friend and I are putting together list of unheard of health products. If you are interested in EMF, deep sleep, mitochrondria, red light and grounding etc, quickly check us out. We would love your feedback!"
+        />
+        <meta
+          property="og:image"
+          content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
+        />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://anthrogenerator.com/" />
+        <meta property="twitter:title" content="Anthro Generator" />
+        <meta
+          property="twitter:description"
+          content="My friend and I are putting together list of unheard of health products. If you are interested in EMF, deep sleep, mitochrondria, red light and grounding etc, quickly check us out. We would love your feedback!"
+        />
+        <meta
+          property="twitter:image"
+          content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
+        />
       </Head>
       <HomeContainer>
         <Hero isTouch={isTouch} style={{ paddingTop: isTouch ? "40px" : "0" }}>
           <HeroLeft isTouch={isTouch}>
             <TagLine>
-              <Title>Pro Choice Products</Title>
+              <Title>Anthro Generator</Title>
               <TagLineSpacer />
             </TagLine>
             <Body>

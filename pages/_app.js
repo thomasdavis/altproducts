@@ -124,14 +124,6 @@ export default class MyApp extends App {
         <ThemeProvider theme={getTheme({ touch: isReallyTouch })}>
           <Component {...appProps} />
         </ThemeProvider>
-        {showTemper && (
-          <script
-            data-id="doqfoueb"
-            src="https://temper.io/d.js"
-            class="temper"
-            async
-          />
-        )}
       </Container>
     );
   }

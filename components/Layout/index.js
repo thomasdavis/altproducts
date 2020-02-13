@@ -45,7 +45,8 @@ const Container = styled.div`
 const ContentContainer = styled.div`
   min-height: 100%;
   background: ${p => p.background};
-  width: 700px;
+  margin-top: ${({ isTouch }) => (isTouch ? "100%" : "700px")};
+
   margin: auto;
 `;
 const SideMenuContainer = styled.div`
@@ -92,16 +93,6 @@ export default ({ children, auth, user, background, isTouch }) => {
   if (auth === null) {
   }
   console.log(isTouch);
-  if (isTouch) {
-    return (
-      <TouchLayout
-        children={children}
-        auth={auth}
-        user={user}
-        background={background}
-      />
-    );
-  }
   return (
     <div>
       <Container>
