@@ -299,7 +299,7 @@ const Hero = styled.div`
 
   padding: ${({ isTouch }) => (isTouch ? "20px" : "0")};
   margin: auto;
-  margin-bottom: ${({ isTouch }) => (isTouch ? "20px" : "120px")};
+  margin-bottom: ${({ isTouch }) => (isTouch ? "20px" : "90px")};
   margin-top: 80px;
 `;
 const LessTitle = styled(Title)`
@@ -309,7 +309,7 @@ const ProductContainer = styled.div`
   display: flex;
   justify-contents: start;
   flex-direction: row;
-  width: 800px;
+  width: 700px;
   margin-bottom: 140px;
 `;
 const ProductImage = styled.img`
@@ -327,7 +327,7 @@ const HeroLeft = styled.div`
   flex: 0 0 auto;
   display: flex;
   flex-direction: column;
-  width: ${({ isTouch }) => (isTouch ? "100%" : "800px")};
+  width: ${({ isTouch }) => (isTouch ? "100%" : "700px")};
   margin-right: ${({ isTouch }) => (isTouch ? "0" : "100px")};
   align-items: flex-start;
   justify-content: center;
@@ -413,14 +413,22 @@ export default props => {
               <TagLineSpacer />
             </TagLine>
             <Body>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum placerat ipsum nec sem congue, ut tempus elit volutpat.
-              Nunc fringilla, elit nec rhoncus tempor, magna nunc mollis turpis,
-              ullamcorper semper sapien tellus sed orci.
+              We are just two average Australian guys who grew up rural but now
+              living in the big city of Melbourne, Australia. Dissatisfied with
+              our own health and everything that is promoted, we decided to
+              research as many alternative health related products as possible.
               <br />
-              Donec sit amet scelerisque urna, vitae vulputate erat. Donec
-              semper faucibus turpis, sit amet scelerisque magna eleifend eget.
-              Praesent at gravida odio.
+              <br />
+              We personally try to own the products listed, but if we don't, we
+              feel like we've made a fair judgement based off comparisons,
+              legitimacy and scientific backing. Regardless, if the product is
+              not the best, we hope at least to educate people about the many
+              potential hazardous impacts of modern life and cool solutions
+              people have manufactured.
+              <br />
+              <br />
+              We aren't affiliated with any of the listed products but have
+              included our own Amazon referral link.
             </Body>
             <br />
             {false && (
