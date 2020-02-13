@@ -45,7 +45,7 @@ const Container = styled.div`
 const ContentContainer = styled.div`
   min-height: 100%;
   background: ${p => p.background};
-  width: 800px;
+  width: 700px;
   margin: auto;
 `;
 const SideMenuContainer = styled.div`
