@@ -45,7 +45,8 @@ const Container = styled.div`
 const ContentContainer = styled.div`
   min-height: 100%;
   background: ${p => p.background};
-  padding-left: 40px;
+  width: 800px;
+  margin: auto;
 `;
 const SideMenuContainer = styled.div`
   background: #7fb069;
@@ -104,22 +105,24 @@ export default ({ children, auth, user, background, isTouch }) => {
   return (
     <div>
       <Container>
-        <SideMenuContainer>
-          <SideMenu>
-            <Link href="/dashboard" passHref>
-              <SideMenuItem>Sleep</SideMenuItem>
-            </Link>
-            <Link href="/settings" passHref>
-              <SideMenuItem>Radiation</SideMenuItem>
-            </Link>
-            <Link href="/settings" passHref>
-              <SideMenuItem>Diet</SideMenuItem>
-            </Link>
-            <Link href="/settings" passHref>
-              <SideMenuItem>Sex</SideMenuItem>
-            </Link>
-          </SideMenu>
-        </SideMenuContainer>
+        {false && (
+          <SideMenuContainer>
+            <SideMenu>
+              <Link href="/dashboard" passHref>
+                <SideMenuItem>Sleep</SideMenuItem>
+              </Link>
+              <Link href="/settings" passHref>
+                <SideMenuItem>Radiation</SideMenuItem>
+              </Link>
+              <Link href="/settings" passHref>
+                <SideMenuItem>Diet</SideMenuItem>
+              </Link>
+              <Link href="/settings" passHref>
+                <SideMenuItem>Sex</SideMenuItem>
+              </Link>
+            </SideMenu>
+          </SideMenuContainer>
+        )}
 
         <ContentContainer background={background || "#fff"}>
           {children}

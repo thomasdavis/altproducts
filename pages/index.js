@@ -3,11 +3,18 @@ import ReactDOM from "react-dom";
 import styled from "styled-components";
 import Router from "next/router";
 import Head from "next/head";
+import { Link as StyledLink } from "../components/Link";
 import { Link } from "../routes";
+import marked from "marked";
 import Layout from "../components/Layout";
 import map from "lodash/map";
 import Button from "../components/Button";
 import { Title, SubTitle, Body } from "../components/Text";
+const capitalize = s => {
+  if (typeof s !== "string") return "";
+  return s.charAt(0).toUpperCase() + s.slice(1);
+};
+
 const productsJSON = [
   {
     Name: "chiliPAD Cube 3.0",
@@ -15,7 +22,7 @@ const productsJSON = [
     Description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     Images:
-      "chilipad-while-sleeping.jpg (https://dl.airtable.com/.attachments/c40bbb194b23a759c71caae6963e7b74/5ec4d808/chilipad-while-sleeping.jpg),71th-Q-VwrL._SL1500_.jpg (https://dl.airtable.com/.attachments/86ef3d8203239c61d12b3424e2b368fe/40c7e470/71th-Q-VwrL._SL1500_.jpg)",
+      "chilipad-while-sleeping.jpg (https://dl.airtable.com/.attachments/c40bbb194b23a759c71caae6963e7b74/5ec4d808/chilipad-while-sleeping.jpg)",
     Link:
       "https://www.amazon.com/ChiliPad-Cube-2-0-Temperature-Enhancement/dp/B07GT9NNZD?ref_=ast_bbp_dp",
     Price: "$599.00"
@@ -25,7 +32,7 @@ const productsJSON = [
       'Sante"ULTIMATE" Dual Shower Filter for Chloramine(Ammonia), Chlorine, Fluoride',
     Category: "water",
     Description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Protect your space suit with a good shower filter and stop washing it with acid rain and hot chlorine.",
     Images:
       "41wPhiWNmnL.jpg (https://dl.airtable.com/.attachments/d8f9208a88257e79bbabb9c5d5698a28/2583a42e/41wPhiWNmnL.jpg)",
     Link:
@@ -35,8 +42,7 @@ const productsJSON = [
   {
     Name: "Winix AW600 Triple Action Humidifier with Plasmawave",
     Category: "air",
-    Description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    Description: "",
     Images:
       "61W8JiXvE9L._SL1500_.jpg (https://dl.airtable.com/.attachments/4c8f3829a6249bf2e0acad79cbebb45e/8afa6eea/61W8JiXvE9L._SL1500_.jpg)",
     Link:
@@ -56,7 +62,8 @@ const productsJSON = [
   {
     Name: "Uvex Skyper Blue Light Blocking Computer Glasses",
     Category: "light",
-    Description: "",
+    Description:
+      "Toxic blue light makes you blind and stupid and it even prematurely ages you according to studies that I read on the internet. They throw out your circadian rhythm by triggering the melonopsin receptor in the eye that regulates your circadian rhythm. And now your body thinks that it's midday. \n\nThis is something that you feel right away. You don't need any studies here it's clear that these glasses make you relaxed. The red ones make you sleepy. \nIdeally you would just have fire light",
     Images:
       "blueblockers.jpg (https://dl.airtable.com/.attachments/9c8e29f4ffc3f16d3ffc68d17be9c692/9d3ae079/blueblockers.jpg)",
     Link:
@@ -130,7 +137,7 @@ const productsJSON = [
     Name: "Berkey Water Filter",
     Category: "",
     Description:
-      "Berkey is the best option for filtering out those oestrogen plastics\n\nInsert Alex Jones' water filter advert",
+      "Berkey is the best option for filtering out those oestrogen plastics",
     Images:
       "berky.jpeg (https://dl.airtable.com/.attachments/1fcc24f331ecc8dfbc639cbfa4d973db/217ac3d9/berky.jpeg)",
     Link:
@@ -172,7 +179,7 @@ const productsJSON = [
     Name: "Grounding Shoe Strap",
     Category: "",
     Description:
-      "Wrap this thing around your shoes to stay grounded. It's hard to believe that grounding is a real thing! There are two proven ways in which grounding affects the body electrically. \n1. The Earth gives off free electrons! Which can work as antioxidants in the body. Carnivores will appreciate a plant free form of antioxidants! The body uses to replace the lost electrons from atoms on molicules that have been damaged by free radicals.\n\n2.There is a double blind randomised trial done on 10 participants that showed grounding dramatically thinned the blood by increasing the zeta potential of the red blood cells. \n\n[Earthing (Grounding) the Human Body Reduces Blood Viscosity—a Major Factor in Cardiovascular Disease](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3576907/)\n\nBy my research I'm about %87 sure that you will experience noticeable health benefits. \n\nHere's one of the videos that convinced me. Scientist Bart Kay explains the science of grounding and the benefits it has on fighting inflammation in the body:\n[Bart Kay on Chronic Inflammation and Grounding](https://www.youtube.com/watch?v=i1lfh2Vj92A)",
+      "Wrap this thing around your shoes to stay grounded. It's hard to believe that grounding is a real thing! There are two proven ways in which grounding affects the body electrically. \n1. The Earth gives off free electrons! Which can work as antioxidants in the body. Carnivores will appreciate a plant free form of antioxidants! The body uses these free electrons to replace the electrons lost from atoms on molecules that have been damaged by free radicals.\n\n2.There is a double blind randomised trial done on 10 participants that showed grounding dramatically thinned the blood by increasing the zeta potential of the red blood cells. Read the paper here: [Earthing (Grounding) the Human Body Reduces Blood Viscosity—a Major Factor in Cardiovascular Disease](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3576907/)\n\nBy my research I'm about %87 sure that you will experience noticeable health benefits. \n\nHere's one of the videos that convinced me. Scientist Bart Kay explains the science of grounding and the benefits it has on fighting inflammation in the body:\n[Bart Kay on Chronic Inflammation and Grounding](https://www.youtube.com/watch?v=i1lfh2Vj92A)",
     Images:
       "earthstrap.jpg (https://dl.airtable.com/.attachments/dea741a171a9a1f69bcca7ec70aebaa4/91b1d1da/earthstrap.jpg)",
     Link:
@@ -198,7 +205,7 @@ const productsJSON = [
       "91-NjAeLUsL._SL1500_.jpg (https://dl.airtable.com/.attachments/1e3015405cf7b032512a326b2fedd65b/b83e3ca3/91-NjAeLUsL._SL1500_.jpg)",
     Link:
       "https://www.amazon.com/Infrared-Relax-Amazing-Health-Benefits/dp/B00HFEFPCM/ref=sr_1_3?keywords=Relax+Far+Infrared+Sauna&qid=1581400831&sr=8-3",
-    Price: "$1,300.00"
+    Price: "$1300.00"
   },
   {
     Name: "North American Herb & Spice Oregafresh Toothpaste",
@@ -215,7 +222,7 @@ const productsJSON = [
     Name: "Hooga Red Light Therapy",
     Category: "",
     Description:
-      "Red light therapy works! This definitely isn't the best one but it's the best one I could find on Amazon.",
+      "Red light therapy works! This definitely isn't the best one but it's the best one I could find on Amazon.  \n\nOver 2000 studies on PubMed",
     Images:
       "611E+QK1gtL._SL1001_.jpg (https://dl.airtable.com/.attachments/19da3db24d95cdc834ee3393dc3f2328/bdab49b8/611EQK1gtL._SL1001_.jpg)",
     Link:
@@ -244,11 +251,40 @@ const productsJSON = [
     Price: "$169.74"
   },
   {
-    Name: "",
+    Name: "Sleeping Mask",
     Category: "",
     Description: "",
     Images: "",
     Link: "",
+    Price: ""
+  },
+  {
+    Name: "Ninja Air Fryer",
+    Category: "",
+    Description: "",
+    Images:
+      "71MbQTc5OEL._SL1500_.jpg (https://dl.airtable.com/.attachments/8190ca26222fcec3af25d7936a19c652/c87c8420/71MbQTc5OEL._SL1500_.jpg)",
+    Link:
+      "https://www.amazon.com/1550-Watt-Programmable-Reheating-Dehydrating-AF101/dp/B07FDJMC9Q/ref=sr_1_1_sspa?keywords=air+fryer+ninja&qid=1581429118&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyUUJQVDhSSlI1UlFWJmVuY3J5cHRlZElkPUEwNjUxNTI1MzlWU1NEWjNRWDY2TCZlbmNyeXB0ZWRBZElkPUEwNTYzNTgxM0ZUVTUwTjlSS0M4MSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=",
+    Price: "$119.99"
+  },
+  {
+    Name: "Cinder Grill",
+    Category: "",
+    Description: "",
+    Images:
+      "41SPLFMZTzL.jpg (https://dl.airtable.com/.attachments/7415ff75085d271ee24bf1ca0fb97aab/9a1a8bbd/41SPLFMZTzL.jpg)",
+    Link:
+      "https://www.amazon.com/Cinder-Grill-Electric-Precision-Overcook/dp/B07P933TDX/ref=sr_1_2?keywords=cinder+grill&qid=1581429271&sr=8-2",
+    Price: "$329.00"
+  },
+  {
+    Name: "",
+    Category: "",
+    Description: "",
+    Images: "",
+    Link:
+      "https://www.amazon.com/filters-White-Elephant-Charcoal-Germany/dp/B01E8ZFVY2/ref=sr_1_25?keywords=active+charcoal+cigarette&qid=1581483175&sr=8-25",
     Price: ""
   }
 ];
@@ -257,33 +293,41 @@ console.log(products);
 const HomeContainer = styled.div`
   background: #fff;
   padding-top: 0px;
-  padding-left: 60px;
 `;
 const Hero = styled.div`
   text-align: center;
-  display: flex;
 
-  justify-content: space-around;
-  flex-direction: ${({ isTouch }) => (isTouch ? "column" : "row")};
-  width: ${({ isTouch }) => (isTouch ? "100%" : "1000px")};
   padding: ${({ isTouch }) => (isTouch ? "20px" : "0")};
   margin: auto;
-  margin-bottom: ${({ isTouch }) => (isTouch ? "20px" : "40px")};
+  margin-bottom: ${({ isTouch }) => (isTouch ? "20px" : "120px")};
   margin-top: 80px;
+`;
+const LessTitle = styled(Title)`
+  font-size: 42px;
 `;
 const ProductContainer = styled.div`
   display: flex;
-  flex-direction: column;
-  width: 400px;
+  justify-contents: start;
+  flex-direction: row;
+  width: 800px;
+  margin-bottom: 140px;
 `;
 const ProductImage = styled.img`
-height: 300px`;
-const ProductSection = styled.div``;
+  align-self: start;
+  flex: 0 0 auto;
+  width: 300px;
+
+  border: 3px solid #ebebeb;
+`;
+const ProductSection = styled.div`
+  flex: 1 1 auto;
+  padding-left: 40px;
+`;
 const HeroLeft = styled.div`
   flex: 0 0 auto;
   display: flex;
   flex-direction: column;
-  width: ${({ isTouch }) => (isTouch ? "100%" : "600px")};
+  width: ${({ isTouch }) => (isTouch ? "100%" : "800px")};
   margin-right: ${({ isTouch }) => (isTouch ? "0" : "100px")};
   align-items: flex-start;
   justify-content: center;
@@ -379,55 +423,70 @@ export default props => {
               Praesent at gravida odio.
             </Body>
             <br />
-            <Buttons>
-              <HomeButton
-                onClick={() => {
-                  Router.push("/signup");
-                }}
-              >
-                SUBSCRIBE
-              </HomeButton>
-            </Buttons>
+            {false && (
+              <Buttons>
+                <HomeButton
+                  onClick={() => {
+                    Router.push("/signup");
+                  }}
+                >
+                  SUGGESTIONS
+                </HomeButton>
+              </Buttons>
+            )}
           </HeroLeft>
-          {!isTouch && (
-            <HeroRight isTouch={isTouch}>
-              <HeroImage src="/static/fabian.png" />
-            </HeroRight>
-          )}
+          {!isTouch && <HeroRight isTouch={isTouch}></HeroRight>}
         </Hero>
-        <TagLine>
-          <Title>Sleep</Title>
-          <TagLineSpacer />
-        </TagLine>
+        {true && (
+          <TagLine>
+            <LessTitle>Research</LessTitle>
+            <TagLineSpacer />
+          </TagLine>
+        )}
 
         {map(products, p => {
           console.log(p.Images);
-          const rege = RegExp('https\:\/\/.*\((.*)\)', 'g');
+          const rege = RegExp("https://.*((.*))", "g");
           if (!p.Images) {
             return null;
           }
-          console.log(p.Images)
+          console.log(p.Images);
           const imgMatch = rege.exec(p.Images);
           if (!imgMatch) {
             return null;
           }
           console.log(imgMatch);
-          const imgUrl = imgMatch[0].substr(0, imgMatch[0].length -1 );
+          const imgUrl = imgMatch[0].substr(0, imgMatch[0].length - 1);
+          if (p.Description === "") {
+            return null;
+          }
           return (
             <ProductContainer>
-              <ProductImage src={imgUrl} />
+              <ProductImage
+                src={
+                  "https://res.cloudinary.com/dx2clxwoo/image/fetch/w_400,c_fit,q_100,e_saturation:80/" +
+                  imgUrl
+                }
+              />
               <ProductSection>
                 <SubTitle>{p.Name}</SubTitle>
                 <br />
                 <Body>
-                  <strong>~${p.Price}</strong>
+                  <strong>Price: </strong>~{p.Price}
                 </Body>
                 <br />
-                <Body>{p.Description}</Body>
+                <Body>
+                  <strong>Category: </strong>
+                  {capitalize(p.Category)}
+                </Body>
                 <br />
-                <Link href="/dashboard" passHref>
+                <Body
+                  dangerouslySetInnerHTML={{ __html: marked(p.Description) }}
+                ></Body>
+                <br />
+                <StyledLink href={p.Link} passHref>
                   Amazon
-                </Link>
+                </StyledLink>
               </ProductSection>
             </ProductContainer>
           );
