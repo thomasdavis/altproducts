@@ -129,19 +129,19 @@ export default class MyDocument extends Document {
           <NextScript />
           <script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=UA-127726094-1"
-          />
-          {process.env.NODE_ENV === "production" && (
-            <script
-              dangerouslySetInnerHTML={{
-                __html: `
-              window.dataLayer = window.dataLayer || [];
+            src="https://www.googletagmanager.com/gtag/js?id=UA-158530774-1"
+          ></script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-                gtag('config', 'UA-127726094-1');
+
+                gtag('config', 'UA-158530774-1');
           `
-              }}
-            />
+            }}
+          />
           )}
         </body>
       </html>
