@@ -1,4 +1,4 @@
-import React from "react";
+qimport React from "react";
 import ReactDOM from "react-dom";
 import styled from "styled-components";
 import Router from "next/router";
@@ -16,17 +16,7 @@ const capitalize = s => {
 };
 
 const productsJSON = [
-  {
-    Name: "chiliPAD Cube 3.0",
-    Category: "Sleep",
-    Description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    Images:
-      "chilipad-while-sleeping.jpg (https://dl.airtable.com/.attachments/c40bbb194b23a759c71caae6963e7b74/5ec4d808/chilipad-while-sleeping.jpg)",
-    Link:
-      "https://www.amazon.com/ChiliPad-Cube-2-0-Temperature-Enhancement/dp/B07GT9NNZD?ref_=ast_bbp_dp",
-    Price: "$599.00"
-  },
+
   {
     Name:
       'Sante"ULTIMATE" Dual Shower Filter for Chloramine(Ammonia), Chlorine, Fluoride',
@@ -528,7 +518,7 @@ export default props => {
                   dangerouslySetInnerHTML={{ __html: marked(p.Description) }}
                 ></Body>
                 <br />
-                <StyledLink href={p.Link} passHref>
+                <StyledLink href={p.Link + '&tag=anthrogenerat-20'} passHref>
                   Amazon
                 </StyledLink>
               </ProductSection>
