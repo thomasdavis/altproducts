@@ -1,4 +1,4 @@
-qimport React from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 import styled from "styled-components";
 import Router from "next/router";
@@ -16,7 +16,6 @@ const capitalize = s => {
 };
 
 const productsJSON = [
-
   {
     Name:
       'Sante"ULTIMATE" Dual Shower Filter for Chloramine(Ammonia), Chlorine, Fluoride',
@@ -518,7 +517,7 @@ export default props => {
                   dangerouslySetInnerHTML={{ __html: marked(p.Description) }}
                 ></Body>
                 <br />
-                <StyledLink href={p.Link + '&tag=anthrogenerat-20'} passHref>
+                <StyledLink href={p.Link + "&tag=anthrogenerat-20"} passHref>
                   Amazon
                 </StyledLink>
               </ProductSection>
