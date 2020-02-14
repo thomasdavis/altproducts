@@ -223,12 +223,12 @@ function (_Document) {
         }
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("body", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_1__["Main"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_1__["NextScript"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
         async: true,
-        src: "https://www.googletagmanager.com/gtag/js?id=UA-127726094-1"
-      }), "development" === "production" && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
+        src: "https://www.googletagmanager.com/gtag/js?id=UA-158530774-1"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
         dangerouslySetInnerHTML: {
-          __html: "\n              window.dataLayer = window.dataLayer || [];\n                function gtag(){dataLayer.push(arguments);}\n                gtag('js', new Date());\n                gtag('config', 'UA-127726094-1');\n          "
+          __html: "\n                window.dataLayer = window.dataLayer || [];\n                function gtag(){dataLayer.push(arguments);}\n                gtag('js', new Date());\n\n                gtag('config', 'UA-158530774-1');\n          "
         }
-      })));
+      }), ")}"));
     }
   }], [{
     key: "getInitialProps",
