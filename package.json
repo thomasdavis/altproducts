@@ -16,7 +16,7 @@
     "gravatar": "^1.6.0",
     "jsoneditor": "^5.24.7",
     "keen-tracking": "^4.0.7",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.21",
     "marked": "^0.8.0",
     "md5": "^2.2.1",
     "moment": "^2.22.2",
